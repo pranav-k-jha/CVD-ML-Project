@@ -1,25 +1,39 @@
-# Predictive Analysis and Prevention of Cardiovascular Disease Using Machine Learning
+# Cardiovascular Disease Prediction Using Machine Learning
 
-**Abstract:**
+## Project Overview
+In this analysis, we explored the Framingham Heart Study dataset to understand and predict the risk of cardiovascular disease. The primary goal was to identify key features associated with heart disease and to build a predictive model.
 
-Cardiovascular disease (CVD) is a significant global health issue, and early detection and intervention can potentially prevent many cases. This project focuses on using machine learning to analyze the Framingham Heart Study dataset to predict and prevent CVD. The approach is structured as follows:
+## Key Findings
 
-1. **Data Acquisition**: Collecting a comprehensive dataset from diverse sources to ensure robust analysis.
+### Dataset
+- **[Data Source References: Kaggle Link](https://www.kaggle.com/amanajmera1/framingham-heart-study-dataset/data)**
 
-2. **Data Filtering and Cleaning**: Addressing inconsistencies and missing values to enhance dataset reliability. Missing values were handled using imputation techniques, and outliers were removed to improve model performance.
+### Feature Analysis
+- **Age, Systolic Blood Pressure (sysBP), Diastolic Blood Pressure (diaBP), and Glucose:** These features showed significant correlations with the target variable `TenYearCHD`, highlighting their importance in predicting heart disease.
 
-3. **Data Transformation**: Converting data into a suitable format for analysis, including feature engineering and normalization. An interaction feature, `age_BMI_interaction`, was created to explore non-linear relationships.
+### Data Cleaning
+- **Missing Values:** Addressed by imputing with median or mean values as appropriate.
+- **Outlier Removal:** Performed to enhance dataset quality and improve model performance.
 
-4. **Exploratory Data Analysis (EDA)**: Identifying key features such as age, systolic and diastolic blood pressure, and glucose, which demonstrated significant correlations with the target variable, `TenYearCHD`.
+### Feature Engineering
+- **Interaction Feature:** Created `age_BMI_interaction` to explore potential non-linear relationships between age and BMI.
 
-5. **Model Building**: Implementing a Linear Regression model to predict the risk of heart disease. Despite achieving an accuracy of approximately 87%, the model faced challenges with imbalanced data, affecting performance in predicting positive cases of heart disease.
+### Model Building
+- **Model Used:** Implemented a Linear Regression model.
+- **Performance:** Achieved approximately 87% accuracy, but struggled with the imbalanced nature of the dataset, resulting in lower performance in predicting positive cases (individuals with heart disease).
 
-6. **Model Evaluation**: Assessing performance metrics revealed high accuracy but highlighted issues in detecting positive cases, as evidenced by low recall, precision, and F1 score for the positive class.
+### Model Evaluation
+- **Metrics:** High accuracy was observed, but challenges in detecting positive cases were evident, with low recall, precision, and F1 score for the positive class.
 
-**Recommendations:**
+## Recommendations for Model Improvement
 
-- **Model Improvement**: Consider more robust models such as Logistic Regression, Random Forest, or Gradient Boosting. Techniques like SMOTE (Synthetic Minority Over-sampling Technique) could also help address dataset imbalance.
+### Model Improvement
+- **Explore Robust Models:** Consider using algorithms such as Random Forests or Gradient Boosting that are better suited for handling imbalanced datasets.
+- **Address Data Imbalance:** Utilize techniques like SMOTE (Synthetic Minority Over-sampling Technique) to balance the dataset and improve the model's ability to detect positive cases.
 
-- **Feature Exploration**: Further investigate additional features or interaction terms that might enhance predictive power. Explore feature scaling and normalization for potential performance improvements.
+### Feature Exploration
+- **Investigate Additional Features:** Further explore other features or interaction terms to enhance predictive power.
+- **Apply Feature Scaling and Normalization:** Experiment with scaling and normalization techniques to potentially improve model performance.
 
-Overall, the project provides valuable insights and a preliminary predictive model for heart disease, but further refinement and exploration are needed to achieve a more balanced and accurate model.
+Overall, while the analysis has provided valuable insights and a foundational predictive model, further refinement and exploration are necessary to develop a more balanced and accurate model for cardiovascular disease prediction.
+
