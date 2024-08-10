@@ -26,6 +26,8 @@ In this analysis, we examined the Framingham Heart Study dataset to understand a
   - **Challenges:** Low recall, precision, and F1 score for the positive class highlighted difficulties in detecting individuals with heart disease.
   - **ROC Curve:** The ROC curve analysis provided insights into the model's performance across different thresholds, with an area under the curve (AUC) reflecting overall model capability.
 
+  <img src="output.png"/>
+
 ## Recommendations for Model Improvement
 
 ### Model Improvement
